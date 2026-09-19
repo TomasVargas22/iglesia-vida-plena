@@ -1,0 +1,12 @@
+# Antigravity & Agent workspace artifacts
+.agents/
+.antigravity/
+
+# Resguardos históricos y bocetos
+.archive/
+
+# Editor & OS
+.vscode/
+.DS_Store
+Thumbs.db
+*.log

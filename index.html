@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth overflow-x-hidden">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Comunidad Cristiana Vida Plena | Asambleas de Dios Costa Rica</title>
+
+    <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>✝️</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&display=swap"
+    rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0c1b33",
+            "primary-container": "#0c1b33",
+            "secondary": "#904d00",
+            "secondary-container": "#fe932c",
+            "secondary-fixed": "#ffdcc3",
+            "secondary-gold": "#f59e0b",
+            "surface": "#fbf9f6",
+            "surface-low": "#f5f3f0",
+            "surface-container": "#efeeeb",
+            "surface-high": "#eae8e5",
+            "surface-lowest": "#ffffff",
+            "on-surface": "#1b1c1a",
+            "on-surface-variant": "#44474d",
+            "outline-variant": "#c5c6ce",
+            "accent-green": "#069669"
+          },
+          fontFamily: {
+            "sans": ["'Hanken Grotesk'", "sans-serif"],
+            "serif": ["'Newsreader'", "serif"],
+            "display": ["'Hanken Grotesk'", "sans-serif"],
+            "mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body
+  class="bg-surface text-on-surface font-sans antialiased selection:bg-secondary-container selection:text-primary-container overflow-x-hidden">
+
+        <header id="mainHeader"
+    class="fixed top-2.5 sm:top-5 inset-x-2 sm:inset-x-4 max-w-6xl mx-auto z-50 transition-all duration-300">
+    <div
+      class="glass-pill rounded-full px-3 sm:px-5 py-2 sm:py-2.5 shadow-2xl flex items-center justify-between transition-all duration-300">
+
+            <a href="#hero" class="flex items-center gap-2.5 text-white group">
+        <span
+          class="w-8 h-8 rounded-full bg-secondary-container/20 border border-secondary-container/60 flex items-center justify-center text-secondary-container font-serif text-lg font-bold group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">✝</span>
+        <div class="flex flex-col">
+          <span class="font-serif text-xl font-bold tracking-tight text-white leading-none">Vida Plena.</span>
+          <span class="text-[9px] uppercase tracking-widest text-secondary-fixed/80 font-semibold mt-0.5">Asambleas de
+            Dios</span>
+        </div>
+      </a>
+
+            <nav class="hidden md:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-white/80">
+        <a href="#hero"
+          class="text-white hover:text-secondary-fixed transition-colors border-b-2 border-secondary-container pb-0.5">Inicio</a>
+        <a href="#fundamentos" class="hover:text-white transition-colors hover:scale-105 transform">Nosotros</a>
+        <a href="#reuniones" class="hover:text-white transition-colors hover:scale-105 transform">Reuniones</a>
+        <a href="#generosidad"
+          class="hover:text-white transition-colors flex items-center gap-1 hover:scale-105 transform">
+          <span>SINPE &amp; Ofrendas</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-ping"></span>
+        </a>
+        <a href="#academia" class="hover:text-white transition-colors hover:scale-105 transform">Academia</a>
+        <a href="#ubicacion" class="hover:text-white transition-colors hover:scale-105 transform">Ubicación</a>
+        <a href="#contacto" class="hover:text-white transition-colors hover:scale-105 transform">Contacto</a>
+      </nav>
+
+            <div class="flex items-center gap-3">
+        <a href="https://wa.me/50670951665?text=Hola%20Vida%20Plena,%20deseo%20planificar%20mi%20visita" target="_blank"
+          rel="noopener noreferrer"
+          class="shimmer-btn text-primary font-bold text-xs uppercase tracking-wider px-3 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-secondary-container/30 active:scale-95 flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-sm">church</span>
+          <span class="hidden sm:inline">Planifica tu Visita</span>
+        </a>
+
+                <button id="drawerToggle"
+          class="md:hidden text-white p-2 rounded-full hover:bg-white/10 transition-colors touch-target"
+          aria-label="Abrir Menú">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+          <div id="drawerOverlay" class="drawer-overlay md:hidden"></div>
+
+    <nav id="drawerPanel" class="drawer-panel md:hidden glass-pill safe-area-bottom">
+    <div class="flex flex-col h-full p-6">
+
+            <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/15">
+        <div class="flex items-center gap-2.5">
+          <span
+            class="w-8 h-8 rounded-full bg-secondary-container/20 border border-secondary-container/60 flex items-center justify-center text-secondary-container font-serif text-lg font-bold">✝</span>
+          <div>
+            <span class="font-serif text-lg font-bold text-white leading-none block">Vida Plena.</span>
+            <span class="text-[9px] uppercase tracking-widest text-secondary-fixed/80 font-semibold">Asambleas de
+              Dios</span>
+          </div>
+        </div>
+        <button id="drawerClose" class="text-white p-2 rounded-full hover:bg-white/10 transition-colors touch-target"
+          aria-label="Cerrar Menú">
+          <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+      </div>
+
+            <div class="flex flex-col gap-1 flex-1">
+        <a href="#hero"
+          class="drawer-link py-3.5 px-3 rounded-xl text-white/90 text-sm font-semibold uppercase tracking-wider hover:bg-white/10 hover:text-secondary-container transition-all flex items-center gap-3">
+          <span class="material-symbols-outlined text-secondary-container text-lg">home</span>
+          <span>Inicio</span>
+        </a>
+        <a href="#fundamentos"
+          class="drawer-link py-3.5 px-3 rounded-xl text-white/90 text-sm font-semibold uppercase tracking-wider hover:bg-white/10 hover:text-secondary-container transition-all flex items-center gap-3">
+          <span class="material-symbols-outlined text-secondary-container text-lg">auto_stories</span>
+          <span>Nosotros</span>
+        </a>
+        <a href="#reuniones"
+          class="drawer-link py-3.5 px-3 rounded-xl text-white/90 text-sm font-semibold uppercase tracking-wider hover:bg-white/10 hover:text-secondary-container transition-all flex items-center gap-3">
+          <span class="material-symbols-outlined text-secondary-container text-lg">event</span>
+          <span>Reuniones y Horarios</span>
+        </a>
+        <a href="#generosidad"
+          class="drawer-link py-3.5 px-3 rounded-xl text-white/90 text-sm font-semibold uppercase tracking-wider hover:bg-white/10 hover:text-secondary-container transition-all flex items-center gap-3">
+          <span class="material-symbols-outlined text-secondary-container text-lg">volunteer_activism</span>
+          <span>SINPE &amp; Ofrendas</span>
+        </a>
+        <a href="#academia"
+          class="drawer-link py-3.5 px-3 rounded-xl text-white/90 text-sm font-semibold uppercase tracking-wider hover:bg-white/10 hover:text-secondary-container transition-all flex items-center gap-3">
+          <span class="material-symbols-outlined text-secondary-container text-lg">school</span>
+          <span>Academia Vida Plena</span>
+        </a>
+        <a href="#ubicacion"
+          class="drawer-link py-3.5 px-3 rounded-xl text-white/90 text-sm font-semibold uppercase tracking-wider hover:bg-white/10 hover:text-secondary-container transition-all flex items-center gap-3">
+          <span class="material-symbols-outlined text-secondary-container text-lg">location_on</span>
+          <span>Ubicación y Cómo Llegar</span>
+        </a>
+        <a href="#contacto"
+          class="drawer-link py-3.5 px-3 rounded-xl text-white/90 text-sm font-semibold uppercase tracking-wider hover:bg-white/10 hover:text-secondary-container transition-all flex items-center gap-3">
+          <span class="material-symbols-outlined text-secondary-container text-lg">favorite</span>
+          <span>Contacto y Oración</span>
+        </a>
+      </div>
+
+            <div class="mt-6 pt-4 border-t border-white/15 space-y-3">
+        <a href="https://wa.me/50670951665?text=Hola%20Vida%20Plena,%20deseo%20planificar%20mi%20visita" target="_blank"
+          rel="noopener noreferrer"
+          class="w-full shimmer-btn text-primary font-bold text-xs uppercase tracking-wider px-4 py-3.5 rounded-full shadow-lg flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-sm">chat</span>
+          <span>Planifica tu Visita</span>
+        </a>
+        <div class="flex items-center justify-center gap-4 text-white/60 text-xs pt-2">
+          <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">call</span> +506
+            7095-1665</span>
+          <span>•</span>
+          <span class="font-bold">@iglevp</span>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+        <section id="hero"
+    class="relative min-h-screen w-full flex flex-col justify-between pt-20 sm:pt-32 pb-0 overflow-x-hidden bg-[#0c1b33]">
+
+        <div class="absolute inset-0 z-0 overflow-hidden">
+      <img src="images/hero.jpg" alt="Comunidad Cristiana Vida Plena - La Cruz y la Ciudad"
+        class="w-full h-full object-cover object-center hero-zoom" />
+
+            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-black/25"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/35"></div>
+    </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-12 w-full my-auto pt-4 sm:pt-8 pb-6 sm:pb-14">
+      <div class="max-w-3xl">
+
+                <div
+          class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-white text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-6 shadow-sm"
+          data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          <span>Asambleas de Dios Costa Rica · @iglevp</span>
+        </div>
+
+                <h1 class="space-y-1" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+          <span
+            class="block font-sans text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-white leading-none">
+            VIVE LA PLENITUD DEL
+          </span>
+          <span
+            class="block font-serif text-3xl sm:text-5xl md:text-7xl lg:text-8xl italic font-normal text-secondary-container leading-tight drop-shadow-md">
+            Amor de Dios.
+          </span>
+        </h1>
+
+                <p class="mt-4 sm:mt-6 text-white/90 text-sm sm:text-base md:text-xl font-normal leading-relaxed max-w-2xl drop-shadow-sm font-sans"
+          data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+          Somos una comunidad familiar de Asambleas de Dios en Costa Rica. Un hogar abierto para ti y tu familia donde
+          experimentar la gracia, la presencia viva y el propósito transformador de Cristo que alcanza a toda vida.
+        </p>
+
+                <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4"
+          data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
+                    <a href="#reuniones"
+            class="shimmer-btn text-primary font-extrabold text-xs uppercase tracking-wider px-6 sm:px-8 py-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 group min-h-[48px]">
+            <span>Nuestras Reuniones</span>
+            <span
+              class="material-symbols-outlined text-base group-hover:translate-x-1.5 transition-transform duration-200">arrow_forward</span>
+          </a>
+
+                    <a href="#ubicacion"
+            class="glass-pill hover:bg-white/20 text-white font-semibold text-xs uppercase tracking-wider px-6 py-4 rounded-full flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 active:scale-95 shadow-xl group min-h-[48px]">
+            <span
+              class="material-symbols-outlined text-secondary-container text-base group-hover:scale-110 transition-transform">location_on</span>
+            <span>Cómo Llegar</span>
+          </a>
+
+                    <a href="https://wa.me/50670951665?text=Hola%20Vida%20Plena,%20deseo%20contactarles" target="_blank"
+            rel="noopener noreferrer"
+            class="glass-pill hover:bg-white/20 text-white font-semibold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full flex items-center justify-center sm:justify-start gap-3 transition-all duration-300 hover:scale-105 active:scale-95 shadow-xl min-h-[48px]">
+            <div
+              class="w-8 h-8 rounded-full bg-secondary-container/30 border border-secondary-container/60 flex items-center justify-center text-secondary-container shrink-0">
+              <span class="material-symbols-outlined text-sm">call</span>
+            </div>
+            <div class="text-left">
+              <p class="text-[10px] uppercase tracking-wider text-secondary-fixed font-bold">Escríbenos Directo</p>
+              <p class="text-sm font-bold text-white tracking-tight leading-none mt-0.5">+506 7095-1665</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-12 w-full pb-6 sm:pb-10" id="statsRow"
+      data-aos="fade-up" data-aos-duration="900" data-aos-delay="500">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-end">
+
+                <div class="md:col-span-8 grid grid-cols-3 gap-2 sm:gap-6 border-t border-white/20 pt-4 sm:pt-6">
+          <div class="hover:-translate-y-1 transition-transform duration-300">
+            <div class="font-serif text-lg sm:text-3xl md:text-5xl font-bold text-white tracking-tight">10:00 <span
+                class="text-secondary-container text-xs sm:text-2xl font-normal">AM</span></div>
+            <div
+              class="text-secondary-fixed/90 font-bold text-[10px] sm:text-xs uppercase tracking-tight sm:tracking-wider mt-1">
+              Culto Dominical</div>
+            <p class="text-white/60 text-xs mt-0.5 hidden sm:block">Alabanza y Palabra</p>
+          </div>
+          <div class="hover:-translate-y-1 transition-transform duration-300">
+            <div class="font-serif text-lg sm:text-3xl md:text-5xl font-bold text-white tracking-tight">4:00 <span
+                class="text-secondary-container text-xs sm:text-2xl font-normal">PM</span></div>
+            <div
+              class="text-secondary-fixed/90 font-bold text-[10px] sm:text-xs uppercase tracking-tight sm:tracking-wider mt-1">
+              Sábados · La Reu</div>
+            <p class="text-white/60 text-xs mt-0.5 hidden sm:block">Comunidad Juvenil</p>
+          </div>
+          <div class="hover:-translate-y-1 transition-transform duration-300">
+            <div class="font-serif text-lg sm:text-3xl md:text-5xl font-bold text-white tracking-tight">
+              +<span class="counter" data-target="15">0</span> <span
+                class="text-secondary-container text-xs sm:text-2xl font-normal">Años</span>
+            </div>
+            <div
+              class="text-secondary-fixed/90 font-bold text-[10px] sm:text-xs uppercase tracking-tight sm:tracking-wider mt-1">
+              Edificando Vidas</div>
+            <p class="text-white/60 text-xs mt-0.5 hidden sm:block">Costa Rica</p>
+          </div>
+        </div>
+
+                <div class="md:col-span-4 flex justify-center sm:justify-end mt-3 md:mt-0">
+          <div
+            class="glass-card animate-float w-full max-w-sm rounded-2xl p-4 shadow-2xl text-white flex items-start gap-3.5 hover:border-white/50 transition-all duration-300">
+
+                        <div
+              class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-secondary-container/20 border border-secondary-container/50 flex items-center justify-center text-secondary-container shrink-0 mt-0.5 shadow-sm">
+              <span class="material-symbols-outlined text-lg sm:text-xl">auto_stories</span>
+            </div>
+
+                        <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-secondary-container">1 Pedro 2:17</span>
+                <span class="w-1 h-1 rounded-full bg-white/40"></span>
+                <span class="text-[10px] text-white/70 uppercase tracking-widest font-semibold">Palabra Viva</span>
+              </div>
+              <p class="font-serif italic text-xs sm:text-sm text-white/95 leading-relaxed">
+                «Honren a todos, amen a la hermandad, teman a Dios, honren al rey.»
+              </p>
+              <p class="text-[11px] sm:text-xs text-secondary-fixed/90 font-sans font-medium mt-1.5 flex items-center gap-1">
+                <span class="text-secondary-container font-serif">✝</span>
+                <span>#UnlugarllenodelamordeDios</span>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+                <div class="w-full relative z-20 deckle-divider -mb-1 select-none pointer-events-none">
+      <svg viewBox="0 0 1440 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="w-full h-10 md:h-16 text-surface preserve-3d" preserveAspectRatio="none">
+        <path
+          d="M0 64L0 28.5C36 34.2 74 18.1 112 24C152 30.2 188 42.5 228 36C272 28.8 306 14.3 350 20.5C396 27.2 432 44.8 478 38C524 31 558 16.5 604 22.8C650 29.2 684 46.5 730 40C774 33.6 810 18.2 854 24.5C900 31.4 934 47.8 980 41C1024 34.4 1060 19.5 1104 25.8C1148 32.2 1184 48.5 1228 42C1272 35.4 1308 20.8 1352 26.5C1388 31.2 1416 23.5 1440 18L1440 64L0 64Z"
+          fill="currentColor" />
+      </svg>
+    </div>
+
+  </section>
+
+        <section id="fundamentos" class="py-14 md:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-4 sm:gap-6"
+        data-aos="fade-up" data-aos-duration="800">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 text-secondary font-bold text-xs uppercase tracking-wider mb-3">
+            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            <span>Nuestros Fundamentos</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold text-primary tracking-tight">
+            Cinco pilares que definen quiénes somos
+          </h2>
+          <p class="mt-3 sm:mt-4 text-on-surface-variant text-sm sm:text-base md:text-lg leading-relaxed">
+            Nuestra visión congregacional se edifica sobre la fidelidad apostólica, la gracia transformadora y un
+            profundo sentido de pertenencia en Cristo.
+          </p>
+        </div>
+
+        <div class="hidden lg:block">
+          <a href="#reuniones"
+            class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-secondary hover:text-primary transition-colors border-b border-secondary pb-1 group">
+            <span>Conoce nuestras reuniones</span>
+            <span
+              class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+
+                <div
+          class="bg-surface-lowest border border-outline-variant/40 rounded-2xl p-6 sm:p-8 hover:border-secondary hover:-translate-y-2 hover:shadow-xl transition-all duration-300 shadow-[0_4px_24px_-4px_rgba(12,27,51,0.04)] flex flex-col justify-between group"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span
+                class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-serif text-primary font-bold text-sm italic group-hover:bg-secondary-container/20 transition-colors">01</span>
+              <span
+                class="material-symbols-outlined text-secondary text-2xl group-hover:scale-125 transition-transform duration-300">local_fire_department</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-primary mb-3">Fervor Espiritual</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Una fe viva, encendida y apasionada por la presencia manifiesta del Espíritu Santo en cada celebración
+              congregacional y en el diario caminar.
+            </p>
+          </div>
+          <div
+            class="mt-6 pt-4 border-t border-surface-container flex items-center text-[11px] font-bold uppercase tracking-wider text-secondary">
+            Adoración &amp; Presencia
+          </div>
+        </div>
+
+                <div
+          class="bg-surface-lowest border border-outline-variant/40 rounded-2xl p-6 sm:p-8 hover:border-secondary hover:-translate-y-2 hover:shadow-xl transition-all duration-300 shadow-[0_4px_24px_-4px_rgba(12,27,51,0.04)] flex flex-col justify-between group"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span
+                class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-serif text-primary font-bold text-sm italic group-hover:bg-secondary-container/20 transition-colors">02</span>
+              <span
+                class="material-symbols-outlined text-secondary text-2xl group-hover:scale-125 transition-transform duration-300">diversity_3</span>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-primary mb-3">Compañerismo</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Hermandad genuina, mesas compartidas y relaciones de pacto que trascienden el domingo para acompañarnos
+              mutuamente en cada etapa de la vida.
+            </p>
+          </div>
+          <div
+            class="mt-6 pt-4 border-t border-surface-container flex items-center text-[11px] font-bold uppercase tracking-wider text-secondary">
+            Comunidad Viva
+          </div>
+        </div>
+
+                <div
+          class="bg-surface-lowest border border-outline-variant/40 rounded-2xl p-6 sm:p-8 hover:border-secondary hover:-translate-y-2 hover:shadow-xl transition-all duration-300 shadow-[0_4px_24px_-4px_rgba(12,27,51,0.04)] flex flex-col justify-between group"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span
+                class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-serif text-primary font-bold text-sm italic group-hover:bg-secondary-container/20 transition-colors">03</span>
+              <span
+                class="material-symbols-outlined text-secondary text-2xl group-hover:scale-125 transition-transform duration-300">menu_book</span>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-primary mb-3">Conocimiento Bíblico</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Arraigados firmemente en las Sagradas Escrituras con solidez teológica, profundidad doctrinal y aplicación
+              práctica para los desafíos contemporáneos.
+            </p>
+          </div>
+          <div
+            class="mt-6 pt-4 border-t border-surface-container flex items-center text-[11px] font-bold uppercase tracking-wider text-secondary">
+            Doctrina y Verdad
+          </div>
+        </div>
+
+                <div
+          class="bg-surface-lowest border border-outline-variant/40 rounded-2xl p-6 sm:p-8 hover:border-secondary hover:-translate-y-2 hover:shadow-xl transition-all duration-300 shadow-[0_4px_24px_-4px_rgba(12,27,51,0.04)] flex flex-col justify-between group"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span
+                class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-serif text-primary font-bold text-sm italic group-hover:bg-secondary-container/20 transition-colors">04</span>
+              <span
+                class="material-symbols-outlined text-secondary text-2xl group-hover:scale-125 transition-transform duration-300">volunteer_activism</span>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-primary mb-3">Compromiso</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Entrega sacrificial, generosidad alegre y consagración activa al avance del Reino de Dios y al bienestar
+              integral de nuestro prójimo.
+            </p>
+          </div>
+          <div
+            class="mt-6 pt-4 border-t border-surface-container flex items-center text-[11px] font-bold uppercase tracking-wider text-secondary">
+            Fidelidad &amp; Entrega
+          </div>
+        </div>
+
+                <div
+          class="md:col-span-2 bg-surface-lowest border border-outline-variant/40 rounded-2xl p-6 sm:p-8 hover:border-secondary hover:-translate-y-2 hover:shadow-xl transition-all duration-300 shadow-[0_4px_24px_-4px_rgba(12,27,51,0.04)] flex flex-col justify-between group"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="flex items-center gap-3">
+                <span
+                  class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-serif text-primary font-bold text-sm italic group-hover:bg-secondary-container/20 transition-colors">05</span>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-secondary">Para la Gloria de
+                  Dios</span>
+              </div>
+              <span
+                class="material-symbols-outlined text-secondary text-2xl group-hover:scale-125 transition-transform duration-300">workspace_premium</span>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-primary mb-3">Excelencia en el Servicio</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed max-w-2xl">
+              Consagramos con alegría lo mejor de nuestros dones, talentos y recursos para la gloria de Cristo. Servimos
+              a nuestra comunidad y familias con amor sincero, diligencia, calidez y el corazón pastoral de Jesús en
+              cada aspecto ministerial.
+            </p>
+          </div>
+          <div
+            class="mt-6 pt-4 border-t border-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-on-surface-variant">
+            <span class="font-bold text-secondary text-[11px] uppercase tracking-wider">Vocación &amp;
+              Ministración</span>
+            <span class="font-serif italic text-primary">«Servid de buena voluntad, como al Señor y no a los
+              hombres»</span>
+          </div>
+        </div>
+
+      </div>
+
+                        <div
+        class="mt-12 sm:mt-16 bg-surface-lowest border border-outline-variant/40 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 overflow-hidden shadow-[0_4px_24px_-4px_rgba(12,27,51,0.04)] flex flex-col lg:flex-row items-center justify-between gap-8 group hover:shadow-2xl transition-all duration-500"
+        data-aos="fade-up" data-aos-duration="800">
+        <div class="max-w-xl">
+          <div class="inline-flex items-center gap-2 text-secondary font-bold text-xs uppercase tracking-wider mb-3">
+            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            <span>Tu Camino de Fe</span>
+          </div>
+          <h3 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary tracking-tight leading-tight">
+            No importa dónde te encuentres hoy, en Cristo siempre hay un rumbo
+          </h3>
+          <p class="mt-3 sm:mt-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
+            Cada semana, personas y familias enteras encienden su vehículo para congregarse, adorar y renovar sus
+            fuerzas. La cruz guía tu camino, te acompaña en el trayecto de la vida diaria y te espera con un hogar
+            espiritual donde perteneces.
+          </p>
+          <div class="mt-6 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4">
+            <a href="https://wa.me/50670951665?text=Hola%20Vida%20Plena,%20deseo%20asistir%20este%20domingo"
+              target="_blank" rel="noopener noreferrer"
+              class="w-full sm:w-auto justify-center bg-primary hover:bg-black text-white px-7 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md hover:scale-105 active:scale-95 flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm">directions_car</span>
+              <span>Planifica tu Visita este Domingo</span>
+            </a>
+            <span class="font-serif italic text-xs md:text-sm text-secondary text-center sm:text-left">«Lámpara es a mis
+              pies tu palabra»</span>
+          </div>
+        </div>
+
+                <div
+          class="w-full lg:w-96 h-56 sm:h-64 rounded-2xl overflow-hidden shadow-lg shrink-0 relative border border-outline-variant/30 group-hover:border-secondary transition-all">
+          <img src="images/faith_journey.jpg" alt="En el camino hacia Vida Plena - La cruz en el retrovisor"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
+            <div>
+              <span class="text-white text-xs font-serif italic block">Camino al Santuario · Vida Plena</span>
+              <span class="text-[10px] text-secondary-fixed uppercase tracking-wider font-semibold">Cada viaje tiene un
+                propósito</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+        <section id="reuniones" class="py-14 md:py-24 bg-surface-low border-y border-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-4 sm:gap-6"
+        data-aos="fade-up" data-aos-duration="800">
+        <div>
+          <span class="text-secondary font-bold text-xs uppercase tracking-wider block mb-2">Puntos de Encuentro</span>
+          <h2 class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold text-primary tracking-tight">Reuniones y
+            Horarios</h2>
+        </div>
+                <div class="border-l-2 border-secondary-container pl-4 py-1 max-w-md">
+          <p class="font-serif text-sm sm:text-base italic text-on-surface">
+            «Yo me alegré con los que me decían: A la casa de Jehová iremos.»
+          </p>
+          <span class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mt-1 block">Salmo 122:1</span>
+        </div>
+      </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+
+                <div
+          class="bg-surface-lowest border border-outline-variant/40 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-[0_4px_24px_-4px_rgba(12,27,51,0.06)] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group"
+          data-aos="fade-right" data-aos-duration="800">
+          <div>
+                        <div class="flex items-center justify-between border-b border-surface-container pb-4 sm:pb-6 mb-4 sm:mb-6">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 bg-surface-container text-primary text-[11px] sm:text-xs font-bold rounded-full uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                <span>Todos los Domingos</span>
+              </div>
+              <div class="text-right">
+                <span class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-primary">10:00 <span
+                    class="text-secondary text-xl sm:text-2xl font-normal">AM</span></span>
+                <span
+                  class="block text-[10px] sm:text-[11px] font-semibold text-secondary uppercase tracking-wider">Presencial
+                  &amp;
+                  Virtual</span>
+              </div>
+            </div>
+
+                        <div
+              class="mb-6 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-secondary-container/10 border border-secondary-container/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-ping"></span>
+                <span class="text-xs font-bold uppercase tracking-wider text-secondary">Próximo Culto En:</span>
+              </div>
+                            <div
+                class="flex items-center justify-center sm:justify-end gap-1 sm:gap-1.5 font-mono text-xs sm:text-sm font-bold text-primary">
+                <span id="cultoDays"
+                  class="timer-box px-2 sm:px-2.5 py-1 sm:py-1.5 bg-surface-lowest rounded-lg border border-outline-variant/30 shadow-sm">00d</span>
+                <span class="text-secondary font-black">:</span>
+                <span id="cultoHours"
+                  class="timer-box px-2 sm:px-2.5 py-1 sm:py-1.5 bg-surface-lowest rounded-lg border border-outline-variant/30 shadow-sm">00h</span>
+                <span class="text-secondary font-black">:</span>
+                <span id="cultoMinutes"
+                  class="timer-box px-2 sm:px-2.5 py-1 sm:py-1.5 bg-surface-lowest rounded-lg border border-outline-variant/30 shadow-sm">00m</span>
+                <span class="text-secondary font-black">:</span>
+                <span id="cultoSeconds"
+                  class="timer-box px-2 sm:px-2.5 py-1 sm:py-1.5 bg-secondary-container text-primary rounded-lg shadow-sm">00s</span>
+              </div>
+            </div>
+
+            <h3 class="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-2 sm:mb-3">Culto Dominical
+              Familiar</h3>
+            <p class="text-on-surface-variant text-sm sm:text-base leading-relaxed mb-6">
+              Nuestra celebración principal como congregación. Tiempo de alabanza contemporánea, comunión fraternal,
+              predicación expositiva de la Palabra y un programa especialmente preparado para niños en <strong>Vida
+                Plena Kids</strong>.
+            </p>
+
+            <div
+              class="space-y-3 text-xs sm:text-sm text-on-surface-variant bg-surface-low rounded-2xl p-4 sm:p-5 mb-6 border border-outline-variant/30">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary text-base sm:text-lg">location_on</span>
+                <span>Santuario Principal Vida Plena, Costa Rica</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary text-base sm:text-lg">child_care</span>
+                <span>Salas acondicionadas para bebés, párvulos e infancia</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary text-base sm:text-lg">local_parking</span>
+                <span>Estacionamiento seguro con vigilancia</span>
+              </div>
+            </div>
+          </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
+            <a href="https://wa.me/50670951665?text=Hola%20deseo%20asistir%20al%20Culto%20Dominical" target="_blank"
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto justify-center bg-primary hover:bg-black text-white px-8 py-4 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-2 shadow-md hover:scale-105 active:scale-95">
+              <span class="material-symbols-outlined text-sm">notifications_active</span>
+              <span>Avisar Llegada</span>
+            </a>
+            <span class="text-xs text-on-surface-variant text-center sm:text-right">¡Te esperamos con los brazos
+              abiertos!</span>
+          </div>
+        </div>
+
+                <div
+          class="bg-surface-lowest border border-outline-variant/40 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-[0_4px_24px_-4px_rgba(12,27,51,0.06)] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group"
+          data-aos="fade-left" data-aos-duration="800">
+          <div>
+                        <div class="flex items-center justify-between border-b border-surface-container pb-4 sm:pb-6 mb-4 sm:mb-6">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 bg-secondary-fixed text-on-secondary-fixed text-[11px] sm:text-xs font-bold rounded-full uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                <span>Todos los Sábados</span>
+              </div>
+              <div class="text-right">
+                <span class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-primary">4:00 <span
+                    class="text-secondary text-xl sm:text-2xl font-normal">PM</span></span>
+                <span
+                  class="block text-[10px] sm:text-[11px] font-semibold text-secondary uppercase tracking-wider">Edades
+                  13 a 28
+                  años</span>
+              </div>
+            </div>
+
+                        <div
+              class="mb-6 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-secondary-container/10 border border-secondary-container/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+                <span class="text-xs font-bold uppercase tracking-wider text-secondary">Próxima Reu En:</span>
+              </div>
+                            <div
+                class="flex items-center justify-center sm:justify-end gap-1 sm:gap-1.5 font-mono text-xs sm:text-sm font-bold text-primary">
+                <span id="reuDays"
+                  class="timer-box px-2 sm:px-2.5 py-1 sm:py-1.5 bg-surface-lowest rounded-lg border border-outline-variant/30 shadow-sm">00d</span>
+                <span class="text-secondary font-black">:</span>
+                <span id="reuHours"
+                  class="timer-box px-2 sm:px-2.5 py-1 sm:py-1.5 bg-surface-lowest rounded-lg border border-outline-variant/30 shadow-sm">00h</span>
+                <span class="text-secondary font-black">:</span>
+                <span id="reuMinutes"
+                  class="timer-box px-2 sm:px-2.5 py-1 sm:py-1.5 bg-surface-lowest rounded-lg border border-outline-variant/30 shadow-sm">00m</span>
+                <span class="text-secondary font-black">:</span>
+                <span id="reuSeconds"
+                  class="timer-box px-2 sm:px-2.5 py-1 sm:py-1.5 bg-secondary-container text-primary rounded-lg shadow-sm">00s</span>
+              </div>
+            </div>
+
+            <h3 class="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-2 sm:mb-3">La Reu · Jóvenes
+            </h3>
+            <p class="text-on-surface-variant text-sm sm:text-base leading-relaxed mb-6">
+              Una tarde diferente entre amigos. Buena música, café, conversaciones sinceras y mensajes que conectan la
+              fe viva con la realidad cotidiana de la juventud colegial y universitaria.
+            </p>
+
+            <div
+              class="space-y-3 text-xs sm:text-sm text-on-surface-variant bg-surface-low rounded-2xl p-4 sm:p-5 mb-6 border border-outline-variant/30">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary text-base sm:text-lg">groups</span>
+                <span>Comunidad juvenil activa e incluyente</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary text-base sm:text-lg">tag</span>
+                <span>Instagram oficial: <strong>@iglevp</strong></span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary text-base sm:text-lg">sports_esports</span>
+                <span>Dinámicas, campamentos y talleres prácticos</span>
+              </div>
+            </div>
+          </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
+            <a href="https://wa.me/50670951665?text=Hola%20quiero%20conectar%20con%20La%20Reu%20Jovenes" target="_blank"
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto justify-center bg-surface-container hover:bg-surface-high text-primary px-8 py-4 rounded-full text-xs font-bold uppercase tracking-wider border border-outline-variant/60 transition-all duration-300 flex items-center gap-2 hover:scale-105 active:scale-95">
+              <span class="material-symbols-outlined text-sm">chat</span>
+              <span>Conectar con Juventud</span>
+            </a>
+            <span class="text-xs text-on-surface-variant text-center sm:text-right">¡Ven con tus amigos!</span>
+          </div>
+        </div>
+
+      </div>
+
+            <div
+        class="mt-8 bg-surface-lowest border border-outline-variant/40 rounded-2xl p-5 sm:p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm hover:shadow-md transition-all"
+        data-aos="fade-up" data-aos-duration="800">
+        <div class="flex items-start md:items-center gap-4 sm:gap-5">
+          <div
+            class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary shrink-0">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">volunteer_activism</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 sm:gap-3">
+              <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-secondary">Miércoles 7:00
+                PM</span>
+              <span
+                class="text-[10px] sm:text-xs px-2 sm:px-2.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">Presencial
+                y Zoom</span>
+            </div>
+            <h4 class="font-serif text-lg sm:text-xl font-bold text-primary mt-1">Reunión de Oración e Intercesión</h4>
+            <p class="text-on-surface-variant text-xs md:text-sm mt-0.5">Un espacio de quietud y clamor por familias,
+              salud, necesidad laboral y un mover fresco de Dios.</p>
+          </div>
+        </div>
+        <a href="#contacto"
+          class="w-full sm:w-auto text-center justify-center shrink-0 bg-primary text-white px-6 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-black transition-all duration-200 hover:scale-105 active:scale-95">
+          Enviar Petición
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="generosidad" class="py-14 md:py-24 bg-primary text-white relative overflow-hidden">
+        <div
+      class="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+                <div class="lg:col-span-7" data-aos="fade-right" data-aos-duration="800">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/20 border border-secondary-container/40 text-secondary-fixed text-xs font-bold tracking-widest uppercase mb-4">
+            <span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-ping"></span>
+            <span>Generosidad &amp; Mayordomía</span>
+          </div>
+
+          <h2 class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
+            Sembrando con propósito en la obra de Dios
+          </h2>
+
+          <p class="mt-4 sm:mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl">
+            Tu fidelidad y generosidad voluntaria permiten sostener el ministerio, bendecir a familias de nuestra
+            comunidad y seguir extendiendo el mensaje transformador de Cristo en Costa Rica.
+          </p>
+
+                    <div
+            class="mt-6 sm:mt-8 p-4 sm:p-6 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-md max-w-lg hover:border-secondary-container/40 transition-colors">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-secondary-fixed">Canal Oficial
+                SINPE Móvil
+                Costa Rica</span>
+              <span
+                class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[11px] sm:text-xs font-semibold">SINPE
+                Activo</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <div class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight"
+                  id="sinpeNumber">+506
+                  7095-1665</div>
+                <div class="text-xs text-white/70 mt-1">A nombre de: <span class="text-white font-medium">CC Vida
+                    Plena</span></div>
+              </div>
+              <button onclick="copySinpe()"
+                class="w-full sm:w-auto justify-center bg-secondary-container hover:bg-secondary text-primary px-5 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-1.5 shadow-md active:scale-95 hover:scale-105">
+                <span class="material-symbols-outlined text-sm">content_copy</span>
+                <span>Copiar Número</span>
+              </button>
+            </div>
+
+            <div
+              class="mt-4 pt-3 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-white/70">
+              <span>Detalle sugerido: <strong class="text-secondary-fixed font-semibold">Ofrenda /
+                  Diezmo</strong></span>
+              <span class="text-emerald-400 flex items-center gap-1"><span
+                  class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Sin comisiones adicionales</span>
+            </div>
+          </div>
+
+                    <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <a href="https://wa.me/50670951665?text=Hola%20Vida%20Plena,%20deseo%20confirmar%20mi%20ofrenda%20por%20SINPE"
+              target="_blank" rel="noopener noreferrer"
+              class="w-full sm:w-auto justify-center shimmer-btn text-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full shadow-lg transition-all duration-300 flex items-center gap-2 hover:scale-105 active:scale-95">
+              <span class="material-symbols-outlined text-base">verified</span>
+              <span>Reportar Ofrenda por WhatsApp</span>
+            </a>
+            <a href="https://wa.me/50670951665?text=Solicito%20datos%20de%20cuenta%20bancaria%20oficial" target="_blank"
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto justify-center border border-white/30 hover:bg-white/10 text-white font-bold text-xs uppercase tracking-wider px-6 py-4 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 text-center">
+              Solicitar Cuenta IBAN
+            </a>
+          </div>
+        </div>
+
+                <div
+          class="lg:col-span-5 bg-white/10 border border-white/20 rounded-2xl sm:rounded-3xl p-5 sm:p-8 backdrop-blur-xl shadow-2xl"
+          data-aos="fade-left" data-aos-duration="800">
+          <div class="border-b border-white/15 pb-4 mb-6">
+            <span class="text-xs font-bold uppercase text-secondary-fixed tracking-wider block mb-1">Destino de la
+              Siembra</span>
+            <h3 class="font-serif text-2xl font-bold text-white">¿Cómo impacta tu generosidad?</h3>
+            <p class="text-white/70 text-xs mt-1">Transparencia y bendición tangible en cada área de la congregación.
+            </p>
+          </div>
+
+                    <div class="space-y-4">
+
+            <div
+              class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors flex items-start gap-4">
+              <div
+                class="w-10 h-10 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary-container shrink-0">
+                <span class="material-symbols-outlined text-xl">volunteer_activism</span>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Acción Social &amp; Familias</h4>
+                <p class="text-xs text-white/70 mt-0.5 leading-relaxed">Apoyo solidario y canastas de víveres a hogares
+                  en condición de vulnerabilidad de nuestra comunidad.</p>
+              </div>
+            </div>
+
+            <div
+              class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors flex items-start gap-4">
+              <div
+                class="w-10 h-10 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary-container shrink-0">
+                <span class="material-symbols-outlined text-xl">school</span>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Discipulado Infantil &amp; Juventud</h4>
+                <p class="text-xs text-white/70 mt-0.5 leading-relaxed">Recursos pedagógicos para Vida Plena Kids,
+                  encuentros juveniles de La Reu y formación ministerial.</p>
+              </div>
+            </div>
+
+            <div
+              class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors flex items-start gap-4">
+              <div
+                class="w-10 h-10 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary-container shrink-0">
+                <span class="material-symbols-outlined text-xl">temple_buddhist</span>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Edificación &amp; Espacios de Culto</h4>
+                <p class="text-xs text-white/70 mt-0.5 leading-relaxed">Mantenimiento, equipamiento técnico de sonido,
+                  transmisión y mejoras de las instalaciones congregacionales.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/10 text-center">
+            <span class="text-xs font-serif italic text-secondary-fixed">«Cada uno dé como propuso en su corazón: no con
+              tristeza, ni por necesidad, porque Dios ama al dador alegre.» — 2 Corintios 9:7</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+        <section id="academia" class="py-14 md:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16" data-aos="fade-up" data-aos-duration="800">
+        <span class="text-secondary font-bold text-xs uppercase tracking-wider block mb-2">Formación Integral</span>
+        <h2 class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold text-primary tracking-tight">Academia Vida
+          Plena</h2>
+        <p class="mt-3 sm:mt-4 text-on-surface-variant text-sm sm:text-base leading-relaxed">
+          Escuela de Discipulado, Liderazgo y Ministerio de las Asambleas de Dios. Diseñada para capacitar a todo
+          creyente con solidez bíblica y excelencia en el llamado.
+        </p>
+      </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+
+        <div
+          class="bg-surface-lowest border border-outline-variant/40 rounded-2xl p-5 sm:p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-secondary block mb-2">Módulo 01</span>
+          <h3 class="font-serif text-lg sm:text-xl font-bold text-primary mb-2">Fundamentos Teológicos</h3>
+          <p class="text-on-surface-variant text-xs leading-relaxed">Doctrinas bíblicas esenciales, salvación por
+            gracia, cristología y autoridad de las Escrituras.</p>
+        </div>
+
+        <div
+          class="bg-surface-lowest border border-outline-variant/40 rounded-2xl p-5 sm:p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-secondary block mb-2">Módulo 02</span>
+          <h3 class="font-serif text-lg sm:text-xl font-bold text-primary mb-2">Vida Devocional &amp; Carácter</h3>
+          <p class="text-on-surface-variant text-xs leading-relaxed">Disciplinas de intimidad con Dios, oración, fruto
+            del Espíritu y formación del carácter cristiano.</p>
+        </div>
+
+        <div
+          class="bg-surface-lowest border border-outline-variant/40 rounded-2xl p-5 sm:p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-secondary block mb-2">Módulo 03</span>
+          <h3 class="font-serif text-lg sm:text-xl font-bold text-primary mb-2">Liderazgo Servicial</h3>
+          <p class="text-on-surface-variant text-xs leading-relaxed">Principios de gestión de equipos, mentoreo,
+            pastoreo bíblico y multiplicación discipular.</p>
+        </div>
+
+        <div
+          class="bg-surface-lowest border border-outline-variant/40 rounded-2xl p-5 sm:p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-secondary block mb-2">Módulo 04</span>
+          <h3 class="font-serif text-lg sm:text-xl font-bold text-primary mb-2">Misiones &amp; Alcance</h3>
+          <p class="text-on-surface-variant text-xs leading-relaxed">Evangelismo relacional, acompañamiento familiar y
+            compromiso con el envío misionero.</p>
+        </div>
+
+      </div>
+
+      <div class="mt-8 sm:mt-12 text-center" data-aos="fade-up" data-aos-duration="800">
+        <a href="https://wa.me/50670951665?text=Hola%20deseo%20inscribirme%20en%20la%20Academia%20Vida%20Plena"
+          target="_blank" rel="noopener noreferrer"
+          class="w-full sm:w-auto justify-center inline-flex items-center gap-2 bg-primary hover:bg-black text-white px-8 py-4 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md hover:scale-105 active:scale-95">
+          <span class="material-symbols-outlined text-base">school</span>
+          <span>Inscripciones Abiertas Ciclo 2025</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+        <section id="ubicacion" class="py-14 md:py-24 bg-surface border-t border-outline-variant/30 scroll-mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+
+            <div class="max-w-3xl mb-10 sm:mb-16 md:mb-20" data-aos="fade-up" data-aos-duration="800">
+                <div
+          class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-surface-low border editorial-border mb-4 sm:mb-6">
+          <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          <span class="text-[10px] sm:text-[11px] font-bold tracking-widest text-on-surface-variant uppercase">Tres
+            Ríos, Cartago,
+            Costa Rica · Asambleas de Dios</span>
+        </div>
+                <h2 class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold text-primary tracking-tight mb-4 sm:mb-6">
+          Nuestra Casa, <span class="italic text-secondary font-normal">Tu Hogar:</span> Cómo Llegar.
+        </h2>
+                <p class="text-on-surface-variant text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 font-sans">
+          Un lugar lleno de la presencia y el amor de Dios esperando por ti y tu familia cada semana. Te compartimos los
+          accesos, rutas vehiculares y amenidades para que tu visita sea cómoda, fluida y llena de paz.
+        </p>
+                <div
+          class="flex flex-wrap items-center gap-2 sm:gap-4 text-xs font-semibold text-on-surface-variant/90 border-t editorial-border pt-4">
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary text-base">pin_drop</span>
+            <span class="font-bold text-on-surface">Sede Tres Ríos, Cartago</span>
+          </div>
+          <span class="text-outline-variant hidden sm:inline">•</span>
+          <span>Sobre Ruta 251 · Contiguo a Café Malé</span>
+          <span class="text-outline-variant hidden sm:inline">•</span>
+          <span class="flex items-center gap-1 text-emerald-700 font-bold w-full sm:w-auto mt-1 sm:mt-0">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+            Puertas abiertas desde las 9:15 AM los Domingos
+          </span>
+        </div>
+      </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start mb-12 sm:mb-16">
+
+                <div class="lg:col-span-7 flex flex-col gap-6 sm:gap-8" data-aos="fade-right" data-aos-duration="800">
+
+                    <div class="bg-surface-lowest editorial-border rounded-2xl p-5 sm:p-8 editorial-shadow">
+            <div class="flex items-center justify-between pb-4 sm:pb-6 mb-4 sm:mb-6 editorial-border-b">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-surface-low flex items-center justify-center text-primary shrink-0">
+                  <span class="material-symbols-outlined">navigation</span>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg sm:text-2xl font-bold text-primary">Dirección y Servicios</h3>
+                  <p class="text-[11px] sm:text-xs text-on-surface-variant">Ubicación física clara y referenciada |
+                    COSTA RICA</p>
+                </div>
+              </div>
+              <span
+                class="hidden sm:inline-block text-[11px] font-bold tracking-wider px-3 py-1 rounded-full bg-surface-low text-on-surface-variant uppercase">
+                Tres Ríos, Cartago
+              </span>
+            </div>
+
+                        <div class="bg-surface-low/60 rounded-xl p-4 sm:p-5 editorial-border mb-6">
+              <span
+                class="text-[10px] sm:text-[11px] font-bold tracking-wider uppercase text-secondary block mb-1">DIRECCIÓN
+                A LA
+                USANZA NACIONAL</span>
+              <p class="text-sm sm:text-base text-on-surface font-semibold leading-relaxed">
+                Tres Ríos, Cartago, Costa Rica — Del Parque Central de Tres Ríos, 150 metros al Este sobre la Ruta 251,
+                contiguo a Café Malé (frente a las inmediaciones de La Antigua).
+              </p>
+              <p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Inmueble acondicionado para reuniones y congregación familiar, ubicado sobre vía principal con acceso
+                directo a nivel de calle.
+              </p>
+            </div>
+
+                        <div class="space-y-3 mb-6 sm:mb-8">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2">Horarios de Reunión
+                Semanal</h4>
+
+                            <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 sm:p-4 rounded-xl bg-surface-lowest editorial-border hover:border-secondary/40 transition-colors gap-2">
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-secondary-fixed/40 flex items-center justify-center text-secondary font-serif font-bold text-xs sm:text-sm shrink-0">
+                    01
+                  </div>
+                  <div>
+                    <h5 class="font-serif text-sm sm:text-base font-bold text-primary">Culto Dominical Familiar</h5>
+                    <p class="text-[11px] sm:text-xs text-on-surface-variant">Alabanza congregacional, predicación
+                      expositiva y Vida
+                      Plena Kids</p>
+                  </div>
+                </div>
+                <div class="text-left sm:text-right shrink-0 pl-10 sm:pl-0">
+                  <span
+                    class="inline-block text-[10px] sm:text-[11px] font-bold tracking-wider px-3 py-1 rounded-full bg-primary text-white">
+                    Domingos 10:00 AM
+                  </span>
+                </div>
+              </div>
+
+                            <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 sm:p-4 rounded-xl bg-surface-lowest editorial-border hover:border-secondary/40 transition-colors gap-2">
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surface-low flex items-center justify-center text-on-surface-variant font-serif font-bold text-xs sm:text-sm shrink-0">
+                    02
+                  </div>
+                  <div>
+                    <h5 class="font-serif text-sm sm:text-base font-bold text-primary">La Reu de Jóvenes</h5>
+                    <p class="text-[11px] sm:text-xs text-on-surface-variant">Comunidad juvenil, dinámicas, discipulado
+                      y banda en vivo
+                    </p>
+                  </div>
+                </div>
+                <div class="text-left sm:text-right shrink-0 pl-10 sm:pl-0">
+                  <span
+                    class="inline-block text-[10px] sm:text-[11px] font-bold tracking-wider px-3 py-1 rounded-full bg-surface-container text-on-surface">
+                    Sábados 4:00 PM
+                  </span>
+                </div>
+              </div>
+
+                            <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 sm:p-4 rounded-xl bg-surface-lowest editorial-border hover:border-secondary/40 transition-colors gap-2">
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surface-low flex items-center justify-center text-on-surface-variant font-serif font-bold text-xs sm:text-sm shrink-0">
+                    03
+                  </div>
+                  <div>
+                    <h5 class="font-serif text-sm sm:text-base font-bold text-primary">Oración e Intercesión</h5>
+                    <p class="text-[11px] sm:text-xs text-on-surface-variant">Clamor por las familias, sanidad y
+                      peticiones de la
+                      comunidad</p>
+                  </div>
+                </div>
+                <div class="text-left sm:text-right shrink-0 pl-10 sm:pl-0">
+                  <span
+                    class="inline-block text-[10px] sm:text-[11px] font-bold tracking-wider px-3 py-1 rounded-full bg-surface-container text-on-surface">
+                    Miércoles 7:00 PM
+                  </span>
+                </div>
+              </div>
+            </div>
+
+                        <div class="pt-4 editorial-border-t">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-3 sm:mb-4">Conduce
+                Directamente a
+                la Entrada</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+                                <a href="https://waze.com/ul?q=Parque+Central+Tres+Rios+Costa+Rica" target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-[#0c1b33] hover:bg-[#1e293b] text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md hover:scale-105 active:scale-95 group min-h-[48px]">
+                  <span
+                    class="material-symbols-outlined text-secondary-container text-lg group-hover:scale-110 transition-transform">near_me</span>
+                  <span>Abrir en Waze</span>
+                </a>
+                                <a href="https://maps.google.com/?q=Parque+Central+Tres+Rios+Cartago+Costa+Rica" target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-surface-lowest editorial-border text-on-surface hover:bg-surface-low font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md hover:scale-105 active:scale-95 group min-h-[48px]">
+                  <span
+                    class="material-symbols-outlined text-red-600 text-lg group-hover:scale-110 transition-transform">map</span>
+                  <span>Abrir en Google Maps</span>
+                </a>
+              </div>
+
+                            <a href="https://wa.me/50670951665?text=Hola%20Vida%20Plena,%20deseo%20visitarles%20en%20Tres%20Ríos"
+                target="_blank" rel="noopener noreferrer"
+                class="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 hover:bg-emerald-100 transition-colors duration-300 gap-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-9 h-9 rounded-full bg-emerald-600 flex items-center justify-center text-white shrink-0">
+                    <span class="material-symbols-outlined text-lg">chat</span>
+                  </span>
+                  <div class="text-left">
+                    <p class="text-xs font-bold text-emerald-900">Coordinar tu llegada por WhatsApp</p>
+                    <p class="text-[11px] text-emerald-700">+506 7095-1665 · Equipo en Tres Ríos</p>
+                  </div>
+                </div>
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider bg-white text-emerald-800 px-2.5 py-1 rounded-full border border-emerald-300 shadow-sm self-end sm:self-auto">
+                  Respuesta Inmediata
+                </span>
+              </a>
+            </div>
+          </div>
+
+                    <div class="bg-surface-lowest editorial-border rounded-2xl p-5 sm:p-8 editorial-shadow">
+            <h3 class="font-serif text-lg sm:text-2xl font-bold text-primary mb-2">Comodidades Preparadas Para Ti</h3>
+            <p class="text-xs text-on-surface-variant mb-4 sm:mb-6">Hemos acondicionado cada detalle para que disfrutes
+              de un
+              tiempo de edificación y paz absoluta.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                            <div class="p-3.5 sm:p-4 rounded-xl bg-surface-low editorial-border flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-secondary text-xl sm:text-2xl shrink-0 mt-0.5">local_parking</span>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-on-surface">Parqueo Privado y Seguro</h4>
+                  <p class="text-[11px] sm:text-xs text-on-surface-variant mt-0.5 sm:mt-1 leading-relaxed">
+                    Estacionamiento seguro en las
+                    inmediaciones con apoyo y guía de nuestros servidores.</p>
+                </div>
+              </div>
+                            <div class="p-3.5 sm:p-4 rounded-xl bg-surface-low editorial-border flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-secondary text-xl sm:text-2xl shrink-0 mt-0.5">accessible</span>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-on-surface">Accesibilidad a Nivel de Calle</h4>
+                  <p class="text-[11px] sm:text-xs text-on-surface-variant mt-0.5 sm:mt-1 leading-relaxed">Acceso
+                    frontal directo y cómodo sin
+                    desniveles para adultos mayores y familias.</p>
+                </div>
+              </div>
+                            <div class="p-3.5 sm:p-4 rounded-xl bg-surface-low editorial-border flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-secondary text-xl sm:text-2xl shrink-0 mt-0.5">child_care</span>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-on-surface">Vida Plena Kids</h4>
+                  <p class="text-[11px] sm:text-xs text-on-surface-variant mt-0.5 sm:mt-1 leading-relaxed">Aulas
+                    didácticas acondicionadas para
+                    la enseñanza de los más pequeños.</p>
+                </div>
+              </div>
+                            <div class="p-3.5 sm:p-4 rounded-xl bg-surface-low editorial-border flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-xl sm:text-2xl shrink-0 mt-0.5">coffee</span>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-on-surface">Cafetería &amp; Convivencia</h4>
+                  <p class="text-[11px] sm:text-xs text-on-surface-variant mt-0.5 sm:mt-1 leading-relaxed">Café de
+                    cortesía y espacio de comunión
+                    fraterna al finalizar la reunión.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+                <div class="lg:col-span-5 flex flex-col gap-6 sm:gap-8" data-aos="fade-left" data-aos-duration="800">
+
+                    <div class="bg-surface-lowest editorial-border rounded-2xl overflow-hidden editorial-shadow">
+
+                        <div
+              class="px-5 sm:px-6 py-3.5 sm:py-4 bg-surface-low/90 border-b editorial-border flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                <span class="text-xs font-bold text-primary">Sede Tres Ríos, Cartago</span>
+              </div>
+              <span class="text-[10px] sm:text-[11px] font-semibold text-secondary uppercase tracking-wider">
+                Sobre Ruta 251
+              </span>
+            </div>
+
+                        <div class="relative overflow-hidden group">
+              <img
+                class="w-full h-52 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                alt="Instalaciones de Comunidad Cristiana Vida Plena en Tres Ríos Cartago" src="church_hero.jpg" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/35 to-transparent flex items-end p-4 sm:p-6">
+                <div>
+                  <span
+                    class="text-[10px] sm:text-[11px] font-bold uppercase text-secondary-fixed tracking-wider">Nuestras
+                    Instalaciones</span>
+                  <h4 class="font-serif text-white text-base sm:text-xl font-bold">Inmueble para congregación familiar
+                  </h4>
+                  <p class="text-white/80 text-xs mt-0.5 sm:mt-1">Acceso directo a nivel de calle sobre vía principal
+                  </p>
+                </div>
+              </div>
+            </div>
+
+                        <div class="p-4 sm:p-6">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-3 sm:mb-4">
+                Recomendaciones de
+                Ruta</h4>
+              <div class="space-y-3 sm:space-y-4">
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-surface-low editorial-border flex items-center justify-center text-primary shrink-0 mt-0.5">
+                    <span class="material-symbols-outlined text-sm sm:text-base">directions_bus</span>
+                  </div>
+                  <div>
+                    <span class="text-xs sm:text-sm font-bold text-on-surface">En Transporte Público</span>
+                    <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed mt-0.5">Rutas San José -
+                      Tres
+                      Ríos / Cartago por Calle Vieja (Ruta 251). Paradas a escasos pasos de la entrada.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-surface-low editorial-border flex items-center justify-center text-primary shrink-0 mt-0.5">
+                    <span class="material-symbols-outlined text-sm sm:text-base">directions_car</span>
+                  </div>
+                  <div>
+                    <span class="text-xs sm:text-sm font-bold text-on-surface">En Vehículo Particular</span>
+                    <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed mt-0.5">Acceso directo
+                      sobre la Ruta 251
+                      desde Curridabat/Pinares o desde el centro de Tres Ríos y Cartago.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-surface-low editorial-border flex items-center justify-center text-secondary shrink-0 mt-0.5">
+                    <span class="material-symbols-outlined text-sm sm:text-base">explore</span>
+                  </div>
+                  <div>
+                    <span class="text-xs sm:text-sm font-bold text-on-surface">Punto de Referencia Directo</span>
+                    <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed mt-0.5">A 150 metros al
+                      Este del Parque
+                      Central de Tres Ríos sobre la vía principal, contiguo a Café Malé y frente a C.C. La Antigua.</p>
+                  </div>
+                </div>
+              </div>
+
+                            <div class="mt-5 pt-4 border-t editorial-border flex flex-col sm:flex-row gap-3">
+                <a href="https://waze.com/ul?q=Parque+Central+Tres+Rios+Costa+Rica" target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex-1 flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-primary text-white text-xs font-bold uppercase tracking-wider hover:bg-slate-800 transition-all duration-200 shadow-sm hover:scale-[1.02] active:scale-95 min-h-[48px]">
+                  <span class="material-symbols-outlined text-secondary-container text-base">near_me</span>
+                  <span>Abrir en Waze</span>
+                </a>
+                <a href="https://maps.google.com/?q=Parque+Central+Tres+Rios+Cartago+Costa+Rica" target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex-1 flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-surface-low editorial-border text-on-surface text-xs font-bold uppercase tracking-wider hover:bg-surface-container transition-all duration-200 shadow-sm hover:scale-[1.02] active:scale-95 min-h-[48px]">
+                  <span class="material-symbols-outlined text-red-600 text-base">map</span>
+                  <span>Abrir en Google Maps</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+                    <div class="p-4 sm:p-6 rounded-2xl bg-surface-low border-l-2 border-secondary editorial-border">
+            <p class="font-serif italic text-primary text-sm sm:text-base font-bold leading-snug mb-1 sm:mb-2">
+              «Yo me alegré con los que me decían: A la casa de Jehová iremos.»
+            </p>
+            <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-on-surface-variant">
+              Salmo 122:1 · Nuestra mayor alegría es recibirte
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6" data-aos="fade-up" data-aos-duration="800">
+                <div
+          class="p-5 sm:p-6 rounded-2xl bg-surface-lowest editorial-border editorial-shadow flex flex-col justify-between">
+          <div>
+            <div
+              class="w-10 h-10 rounded-full bg-surface-low flex items-center justify-center text-primary mb-3 sm:mb-4">
+              <span class="material-symbols-outlined">security</span>
+            </div>
+            <h4 class="font-serif text-base sm:text-lg font-bold text-primary mb-1 sm:mb-2">Parqueo Seguro y Vigilado
+            </h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Monitoreo constante, perímetro cerrado y servidores de apoyo vehicular para que vivas la reunión con
+              serenidad y tranquilidad absoluta.
+            </p>
+          </div>
+          <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 editorial-border-t">
+            <span class="text-[11px] sm:text-xs font-bold text-secondary uppercase">Sin costo adicional</span>
+          </div>
+        </div>
+
+                <div
+          class="p-5 sm:p-6 rounded-2xl bg-surface-lowest editorial-border editorial-shadow flex flex-col justify-between">
+          <div>
+            <div
+              class="w-10 h-10 rounded-full bg-surface-low flex items-center justify-center text-primary mb-3 sm:mb-4">
+              <span class="material-symbols-outlined">favorite</span>
+            </div>
+            <h4 class="font-serif text-base sm:text-lg font-bold text-primary mb-1 sm:mb-2">Equipo Listo Para Recibirte
+            </h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Nuestro ministerio de hospitalidad te dará la bienvenida en el vestíbulo, te orientará con los asientos y
+              resolverá cualquier duda con calidez.
+            </p>
+          </div>
+          <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 editorial-border-t">
+            <span class="text-[11px] sm:text-xs font-bold text-secondary uppercase">Cero presiones · Pura
+              comunión</span>
+          </div>
+        </div>
+
+                <div
+          class="p-5 sm:p-6 rounded-2xl bg-surface-lowest editorial-border editorial-shadow flex flex-col justify-between">
+          <div>
+            <div
+              class="w-10 h-10 rounded-full bg-surface-low flex items-center justify-center text-primary mb-3 sm:mb-4">
+              <span class="material-symbols-outlined">ac_unit</span>
+            </div>
+            <h4 class="font-serif text-base sm:text-lg font-bold text-primary mb-1 sm:mb-2">Ambiente Climatizado y Digno
+            </h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Auditorio principal con aislamiento acústico profesional, climatización balanceada y acústica limpia
+              enfocada en la adoración a Dios.
+            </p>
+          </div>
+          <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 editorial-border-t">
+            <span class="text-[11px] sm:text-xs font-bold text-secondary uppercase">Espacio pensado para la
+              familia</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+        <section id="contacto" class="py-14 md:py-24 bg-surface-low border-t border-outline-variant/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 md:px-12">
+      <div
+        class="bg-surface-lowest border border-outline-variant/40 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 shadow-[0_12px_36px_-4px_rgba(12,27,51,0.06)] hover:shadow-2xl transition-all duration-500"
+        data-aos="zoom-in" data-aos-duration="800">
+
+        <div class="text-center max-w-xl mx-auto mb-8 sm:mb-10">
+          <div
+            class="w-12 h-12 rounded-full bg-secondary-container/20 border border-secondary-container/40 text-secondary flex items-center justify-center mx-auto mb-4 shadow-sm">
+            <span class="material-symbols-outlined text-2xl">favorite</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-4xl font-bold text-primary tracking-tight">
+            ¿Podemos orar por ti hoy?
+          </h2>
+          <p class="mt-2 sm:mt-3 text-on-surface-variant text-sm md:text-base leading-relaxed">
+            Nuestro equipo pastoral y de intercesión ora de manera confidencial por cada motivo. Permítenos acompañarte
+            y creer juntos en Dios.
+          </p>
+        </div>
+
+                <form id="prayerForm" onsubmit="event.preventDefault(); sendPrayerRequest();" class="space-y-4 sm:space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            <div>
+              <label for="nombre"
+                class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2">Tu Nombre
+                Completo</label>
+              <input type="text" id="nombre" required placeholder="Ej. Ana Morales"
+                class="w-full px-4 py-3 rounded-xl border border-outline-variant/50 focus:border-primary focus:ring-0 text-sm bg-surface text-on-surface transition-colors min-h-[48px]" />
+            </div>
+            <div>
+              <label for="motivo"
+                class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2">Área de
+                Petición</label>
+              <select id="motivo"
+                class="w-full px-4 py-3 rounded-xl border border-outline-variant/50 focus:border-primary focus:ring-0 text-sm bg-surface text-on-surface transition-colors min-h-[48px]">
+                <option value="Salud y Sanidad Física">Salud y Sanidad Física</option>
+                <option value="Familia y Matrimonio">Familia y Matrimonio</option>
+                <option value="Provisión y Empleo">Provisión y Empleo</option>
+                <option value="Paz Espiritual y Fe">Paz Espiritual y Fe</option>
+                <option value="Orientación Pastoral">Orientación Pastoral</option>
+                <option value="Otro Motivo Especial">Otro Motivo Especial</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="detalle"
+              class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2">¿Cómo podemos
+              acompañarte en oración?</label>
+            <textarea id="detalle" rows="4" required
+              placeholder="Comparte con confianza aquello por lo que deseas que intercedamos..."
+              class="w-full px-4 py-3 rounded-xl border border-outline-variant/50 focus:border-primary focus:ring-0 text-sm bg-surface text-on-surface transition-colors"></textarea>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+            <div class="flex items-center gap-2 text-xs text-on-surface-variant text-center sm:text-left">
+              <span class="material-symbols-outlined text-emerald-600 text-base">lock</span>
+              <span>Total reserva confidencial. Se remitirá directamente a nuestro WhatsApp oficial.</span>
+            </div>
+            <button type="submit"
+              class="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 shadow-md hover:scale-105 active:scale-95 min-h-[48px]">
+              <span class="material-symbols-outlined text-base">send</span>
+              <span>Enviar Petición por WhatsApp</span>
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+        <footer class="bg-surface-low border-t border-outline-variant/40 pb-24 md:pb-0 safe-area-bottom">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-12 sm:py-16 flex flex-col gap-10 sm:gap-12 w-full">
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+
+                <div class="md:col-span-6 space-y-4">
+          <div class="flex items-center gap-2">
+            <span
+              class="w-8 h-8 rounded-full bg-secondary-container/20 border border-secondary-container/60 flex items-center justify-center text-secondary-container font-serif text-lg font-bold">✝</span>
+            <span class="font-serif text-xl sm:text-2xl font-bold text-primary tracking-tight">Comunidad Cristiana Vida
+              Plena</span>
+          </div>
+          <p class="text-on-surface-variant text-sm max-w-md leading-relaxed">
+            Asambleas de Dios en Costa Rica. Una comunidad de fe donde cada persona encuentra un hogar espiritual, una
+            familia que le ama y el mensaje transformador de Cristo.
+          </p>
+                    <div class="p-4 rounded-xl bg-surface-container border border-outline-variant/40 max-w-md">
+            <p class="font-serif italic text-primary text-sm leading-relaxed">
+              «Yo he venido para que tengan vida, y para que la tengan en abundancia.»
+            </p>
+            <span class="block text-xs font-bold uppercase tracking-wider text-secondary mt-1">Juan 10:10</span>
+          </div>
+        </div>
+
+                <div class="md:col-span-3 space-y-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-2 sm:mb-3">Navegación</span>
+          <ul class="space-y-2 text-xs font-semibold uppercase tracking-wider text-on-surface-variant">
+            <li><a href="#reuniones" class="hover:text-secondary transition-colors block py-1">Culto Dominical (10:00
+                AM)</a></li>
+            <li><a href="#reuniones" class="hover:text-secondary transition-colors block py-1">La Reu Jóvenes (4:00
+                PM)</a></li>
+            <li><a href="#generosidad" class="hover:text-secondary transition-colors block py-1">SINPE &amp;
+                Ofrendas</a></li>
+            <li><a href="#academia" class="hover:text-secondary transition-colors block py-1">Academia Vida Plena</a>
+            </li>
+            <li><a href="#ubicacion" class="hover:text-secondary transition-colors block py-1">Ubicación &amp; Cómo
+                Llegar</a></li>
+            <li><a href="#contacto" class="hover:text-secondary transition-colors block py-1">Peticiones de Oración</a>
+            </li>
+          </ul>
+        </div>
+
+                <div class="md:col-span-3 space-y-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-2 sm:mb-3">Contacto
+            Directo</span>
+          <div class="space-y-2.5 text-xs text-on-surface-variant">
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">call</span>
+              <span class="font-bold text-primary">+506 7095-1665</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">share</span>
+              <span>Instagram: <strong>@iglevp</strong></span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">location_on</span>
+              <span>Tres Ríos, Cartago, Costa Rica</span>
+            </p>
+          </div>
+
+          <div class="pt-3 sm:pt-4">
+            <a href="https://wa.me/50670951665" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-100 text-emerald-800 hover:bg-emerald-200 text-xs font-bold tracking-wider uppercase transition-colors">
+              <span class="material-symbols-outlined text-sm">chat</span>
+              <span>WhatsApp Oficial</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+            <div
+        class="pt-6 sm:pt-8 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-on-surface-variant text-center sm:text-left">
+        <p>© 2026 Comunidad Cristiana Vida Plena. Tres Ríos, Cartago, Costa Rica. Todos los derechos reservados.</p>
+        <p class="text-on-surface-variant/80">#UnlugarllenodelamordeDios · Asambleas de Dios Costa Rica</p>
+      </div>
+
+    </div>
+  </footer>
+
+        <aside id="mobileBottomBar"
+    class="md:hidden fixed bottom-3 inset-x-3 z-40 glass-pill rounded-full p-2 shadow-2xl flex items-center justify-between gap-2 border border-white/25 bottom-bar-enter">
+        <a href="#ubicacion"
+      class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-white/15 hover:bg-white/25 active:scale-95 text-white text-[11px] font-bold uppercase tracking-wider transition-all">
+      <span class="material-symbols-outlined text-secondary-container text-base">pin_drop</span>
+      <span>Cómo Llegar</span>
+    </a>
+
+        <a href="https://wa.me/50670951665?text=Hola%20Vida%20Plena,%20deseo%20contactarles" target="_blank"
+      rel="noopener noreferrer"
+      class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full shimmer-btn active:scale-95 text-primary text-[11px] font-bold uppercase tracking-wider transition-all shadow-md">
+      <span class="material-symbols-outlined text-base">chat</span>
+      <span>Escríbenos</span>
+    </a>
+  </aside>
+
+        <div id="toast"
+    class="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 bg-primary text-white px-4 sm:px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 border border-white/20">
+    <span class="material-symbols-outlined text-emerald-400 text-lg">check_circle</span>
+    <span class="text-xs font-semibold">¡Número de SINPE Móvil copiado al portapapeles!</span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="app.js" defer></script>
+
+</body>
+
+</html>

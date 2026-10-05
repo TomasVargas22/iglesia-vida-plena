@@ -10,3 +10,5 @@
 .DS_Store
 Thumbs.db
 *.log
+# Vercel deployment artifacts
+.vercel/

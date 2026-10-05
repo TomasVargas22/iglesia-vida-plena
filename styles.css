@@ -33,6 +33,11 @@ h1, h2, h3, h4 {
   text-wrap: balance;
 }
 
+/* El atributo hidden debe ganarle a utilidades de display como .flex */
+[hidden] {
+  display: none !important;
+}
+
 ::selection {
   background-color: #ffdcc3;
   color: #0c1b33;

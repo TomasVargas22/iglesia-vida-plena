@@ -1,0 +1,8 @@
+# METODOLOGÍA GSD CORE (Plan -> Build -> Test -> Ship)
+- Antes de escribir código, analiza los requisitos y genera un plan estructurado en tareas pequeñas.
+- Implementa las tareas de forma modular, una por una.
+
+# RALPH LOOP (Bucle de feedback iterativo)
+- No des por terminada una tarea tras editar o crear código.
+- Ejecuta automáticamente los linters, scripts de prueba o compilación en la terminal.
+- Si surgen errores, léelos en la consola, corrige el código y vuelve a ejecutar las pruebas de manera continua hasta que todo pase en verde sin fallos.

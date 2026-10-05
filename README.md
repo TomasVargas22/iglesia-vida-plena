@@ -41,8 +41,8 @@ Diseñado con un enfoque de **Desarrollo Editorial Artesanal**, balance tipográ
 ```
 ├── images/
 │   ├── hero.jpg             # Fotografía principal del Hero
-│   └── faith_journey.jpg    # Fotografía de fondo para el banner de testimonio
-├── church_hero.jpg          # Fotografía de fachada de las instalaciones
+│   ├── faith_journey.jpg    # Fotografía de fondo para el banner de testimonio
+│   └── church_hero.jpg      # Fotografía de fachada de las instalaciones
 ├── index.html               # Estructura y maquetación semántica del sitio
 ├── styles.css               # Estilos personalizados, keyframes y reglas responsive
 ├── app.js                   # Lógica interactiva del cliente (contadores, menús, WhatsApp)
